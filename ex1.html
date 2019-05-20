@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+            <form action="case.php" method="get">
+                <input type="checkbox" name="choice[]"  value="500" />Helmets 500r.s
+   <input type="checkbox" name="choice[]"  value="600" />Over speeding 600r.s
+  <input type="checkbox" name="choice[]"  value="200" />Illegal racing 200r.s
+  <input type="checkbox" name="choice[]"  value="300" />Seat belt 300 r.s
+                <input type="submit" value="order"/>
+                </form>
+  </div>
+        $(document).ready(function() {
+    function updateSum() {
+      var total = 0;
+      $(".sum:checked").each(function(i, n) {total += parseInt($(n).val());})
+      $("#total").val(total);
+    }
+    // run the update on every checkbox change and on startup
+    $("input.sum").change(updateSum);
+    updateSum();
+})
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<section id="extra-features">
+<div class="checkbox">
+<label><input type="checkbox" name="checkbox" id="outside" class="sum" value="10" data-toggle="checkbox"> Outside Wash</label>
+</div><br/>
+<div class="checkbox">
+<label><input type="checkbox" name="checkbox" id="aclean" class="sum" value="39" data-toggle="checkbox"> A - Clean: Wash Vacuum, Windows, Wheels/Tires, Wax</label>
+</div><br/>
+<div class="checkbox">
+<label><input type="checkbox" name="checkbox" id="bclean" class="sum" value="0" data-toggle="checkbox"> B - Clean: Same as A above <em>PLUS:</em> Shampoo Interior, Clean/Dress Interior Panels, Remove Bugs/Tar.</label>
+</div><br/>
+<div class="checkbox">
+<label><input type="checkbox" name="checkbox" id="cclean" class="sum" value="109" data-toggle="checkbox"> C - Clean: Same as B above <em>PLUS:</em> Compound Polish Exterior, Clean/Dress Moldings as Needed.    </label>
+</div>
+</section>
+<input type="text" id="total">
+
+        
+        
+    </body>
+</html>
