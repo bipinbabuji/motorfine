@@ -61,15 +61,15 @@ body{background-image: url("images/case.jpg");
     <a href="#" class="nav-toggle">Toggle Navigation</a>
     <nav class="cmn-tile-nav">
         <ul>
-          <li><a href="userhome.php"style="background-color:whitesmoke;width: 200px; height: 125px;  color: black">Home</a></li>
+         <li><a href="userhome.php"style="background-color:whitesmoke;width: 200px; height: 125px;  color: black">Home</a></li>
         <li><a href="viewcase.php"style="background-color:whitesmoke;width: 200px; height: 125px;  color: black">View<br> Case</a></li>
-        <li><a href="changerc.php"style="background-color:whitesmoke;width: 200px; height: 125px;  color: black">Change <br>Request</a></li>
+        <li><a href="viewinsurance.php"style="background-color:whitesmoke;width: 200px; height: 125px;  color: black">View Insurance</a></li>
         <li><a href="viewrcform.php"style="background-color:whitesmoke; width: 200px; height: 125px; color: black">View Reg.<br>Certificate</a></li>
-        <li><a href="send_feed.php"style="background-color:whitesmoke;width: 200px; height: 125px;  color: black">SEND <br> Feedback</a></li>
         <li><a href="newrc.php"style="background-color:whitesmoke;width: 200px; height: 125px;  color: black">NEW RC <br>DETAILS </a></li>
-	<li><a href="index_1.php"style="background-color:whitesmoke;width: 200px; height: 125px;  color: black">Logout</a></li>
-		<li><a href="#"style="background-color:whitesmoke;width: 200px; height: 125px;  color: black"></a></li>
-			</ul>
+        <li><a href="send_feed.php"style="background-color:whitesmoke;width: 200px; height: 125px;  color: black">SEND <br> Feedback</a></li>
+       <li><a href="changerc.php"style="background-color:whitesmoke;width: 200px; height: 125px;  color: black">Change <br>Request</a></li>
+        <li><a href="index_1.php"style="background-color:whitesmoke;width: 200px; height: 125px;  color: black">Logout</a></li>
+				</ul>
     </nav>
 	
 <!--////////////////////////////////////Container-->
@@ -78,8 +78,40 @@ body{background-image: url("images/case.jpg");
 		
 		<div id="main-content">
 			<div class="wrap-content">
-                            <br><br><br><br><br><br>
-                   
+                            <center>
+                            <table boder="1px">
+                                <tr><td>&nbsp;AMOUNT</td>
+                                    <td>&nbsp;&nbsp;FINE </td>
+                                    
+                                </tr>
+                                <tr>  <td>400 Rs</td>
+                                    <td>Rules of road regulation violations </td>
+                                  
+                                </tr><tr> <td>500Rs</td>
+                                    <td>Over speeding </td>
+                                   
+                                </tr><tr><td>10000Rs</td>
+                                    <td>Drunken driving </td>
+                                    
+                                </tr>
+                                <tr> <td>5000RS</td>
+                                    <td>Illegal racing</td>
+                                   
+                                </tr>
+                                <tr>    <td>1000RS</td>
+                                    <td>Overloading of Two Wheelers</td>
+                                
+                                </tr>
+                                <tr> <td>200RS</td>
+                                    <td>Helmets </td>
+                                   
+                                </tr><tr><td>100RS</td>
+                                    <td>Seat belt </td>
+                                    
+                                </tr>
+                            </table>
+                                </center>
+                            <br>
 				<center><h2>VIEW CASE DETAILS</h2></center><br>
                 <?php
 				if($s==0)
@@ -96,8 +128,8 @@ body{background-image: url("images/case.jpg");
                     <th style="border:1px solid rgba(0,0,0,1.00);">FINE DATE</th>
                      <th style="border:1px solid rgba(0,0,0,1.00);">LOCATION</th>
                      <th style="border:1px solid rgba(0,0,0,1.00);">POLICE STATION</th>
-                    <th style="border:1px solid rgba(0,0,0,1.00);">CASE TYPE</th>
-                    <th style="border:1px solid rgba(0,0,0,1.00);">FINE AMOUNT</th>
+                    <th style="border:1px solid rgba(0,0,0,1.00);">FINE AMOUNTS</th>
+                    <th style="border:1px solid rgba(0,0,0,1.00);">TOTAL AMOUNT</th>
                     <th style="border:1px solid rgba(0,0,0,1.00);">LAST DATE TO PAY</th>
                     <th style="border:1px solid rgba(0,0,0,1.00);"></th></tr>
                 <?php

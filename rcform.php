@@ -27,7 +27,7 @@ if(isset($_POST['submit']))
                    . " VALUES (' $owner', '$chassis','$engine', '$motor', '$tvehicle',' $manufacture', '$color','$seat', '$fuel', '$adrs', '$phone', '$email', '$reg_no', '$pass', '0')");
 	if($q)
 	{
-		echo "<script>alert('registration success your  will be your username')</script>";
+		echo "<script>alert('Vehicle Registration Certificate is Done.')</script>";
 	}
     else
     echo mysql_error();

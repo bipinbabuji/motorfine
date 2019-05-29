@@ -6,19 +6,21 @@ if(isset($_POST['submit']))
     $offence=$_POST['fdate'];     
     $location=$_POST['plaze'];
 	$num=$_POST['num'];
-	$type=$_POST['type'];
+	$type=$_REQUEST["type"];
+        $b=implode("+",$type);
+        
 	$amt=$_POST['amt'];
         $date=$_POST['ldate'];
 	$police=$_POST['pname'];
 
        $_SESSION['amount']=$amt;
        $q=mysql_query("INSERT INTO `moto_fine_handler`.`case_details` (`owner`, `location`, `ofdate`, `id`, `veh_no`, `type`, `amount`, `last_date`, `payment`, `ps_name`) "
- . "VALUES ('$ownern', '$location', '$offence', NULL, '$num', '$type', '$amt', '$date', '0', '$police')");
+ . "VALUES ('$ownern', '$location', '$offence', NULL, '$num', '$b', '$amt', '$date', '0', '$police')");
        
    
 	if($q)
 	{
-		echo "<script>alert('Case Added successfully and send sms to User')</script>";
+		echo "<script>alert('Case Added successfully and send message to User')</script>";
 	}
 	else
 	{
@@ -165,14 +167,15 @@ form{
                 <tr><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;&nbsp;Vehicle no</td><td><input type="text" name="num" style="border:1px solid rgba(0,0,0,1.00);width: 170px; height: 30px" id="num" required=""></td></tr>
                <tr><td>&nbsp;</td><td>&nbsp;</td></tr>  <tr><td>&nbsp;&nbsp;Case type:</td>
                    <td>
-                        <label><input type="checkbox" name="rules_of_road_regulation_violation" value="400">Rules of road regulation violation</label>
-                        <label><input type="checkbox" name="driving_without_license" value="25000">Driving without license</label>
-                        <label><input type="checkbox" name="over_speeding" value="500">Over speeding</label>
-                        <label><input type="checkbox" name="drunken_driving" value="10000">Drunken driving</label>
-                        <label><input type="checkbox" name="illegal_racing" value="5000">Illegal racing</label>
-                        <label><input type="checkbox" name="overloading_of_two_wheelers" value="1000">Overloading of Two Wheelers</label>
-                        <label><input type="checkbox" name="helmets" value="200">Helmets</label>
-                        <label><input type="checkbox" name="seat_belt" value="100">Seat belt</label>
+                      
+                        <label><input type="checkbox" name="type[]" value="400">Rules of road regulation violation</label>
+                       
+                        <label><input type="checkbox" name="type[]" value="500">Over speeding</label>
+                        <label><input type="checkbox" name="type[]" value="10000">Drunken driving</label>
+                        <label><input type="checkbox" name="type[]" value="5000">Illegal racing</label>
+                        <label><input type="checkbox" name="type[]" value="1000">Overloading of Two Wheelers</label>
+                        <label><input type="checkbox" name="type[]" value="200">Helmets</label>
+                        <label><input type="checkbox" name="type[]" value="100">Seat belt</label>
                    </td>
                </tr>
               <tr><td>&nbsp;</td><td>&nbsp;</td></tr>   <tr><td>&nbsp;&nbsp;Fine amount</td>

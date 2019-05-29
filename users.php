@@ -24,7 +24,7 @@ if(isset($_POST['submit']))
 
 	if($q)
 	{
-		echo "<script>alert('registration success your vehicle number will be your username')</script>";
+		echo "<script>alert('Registration Success, your VEHICLE NUMBER will be your USERNAME')</script>";
 	}
     else
     echo mysql_error();

@@ -34,7 +34,7 @@ if(isset($_POST['submit']))
 	}
 	else
 	{
-		echo "<script>alert('Invalid login')</script>";
+		echo "<script>alert('Display a message  incorrect username or password')</script>";
 	}
 	
 }

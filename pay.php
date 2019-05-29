@@ -115,16 +115,14 @@ table, td tr {
     <nav class="cmn-tile-nav">
 		<ul class="clearfix">
 	      
-        <li><a href="#"style="background-color:whitesmoke;width: 200px; height: 125px;  color: black"></a></li>
-		
-        <li><a href="userhome.php"style="background-color:whitesmoke;width: 250px; height: 125px;  color: black">Home</a></li>
-	<li><a href="viewcase.php"style="background-color:whitesmoke;width: 250px; height: 125px;  color: black">View <br> Cases</a></li>
-        <li><a href="changerc.php"style="background-color:whitesmoke;width: 220px; height: 125px;  color: black">Change <br> Request</a></li>
-        <li><a href="viewrcform.php"style="background-color:whitesmoke; width: 220px; height: 125px; color: black">View Reg.<br>Certificate</a></li>
-        <li><a href="send_feed.php"style="background-color:whitesmoke;width: 250px; height: 125px;  color: black">Feedback</a></li>
-        <li><a href="index_1.php"style="background-color:whitesmoke;width: 250px; height: 125px;  color: black">Logout</a></li>
-	<li><a href="#"style="background-color:whitesmoke;width: 200px; height: 125px;  color: black"></a></li>
-				
+        <li><a href="userhome.php"style="background-color:whitesmoke;width: 200px; height: 125px;  color: black">Home</a></li>
+        <li><a href="viewcase.php"style="background-color:whitesmoke;width: 200px; height: 125px;  color: black">View<br> Case</a></li>
+        <li><a href="viewinsurance.php"style="background-color:whitesmoke;width: 200px; height: 125px;  color: black">View<br> Insurance</a></li>
+        <li><a href="viewrcform.php"style="background-color:whitesmoke; width: 200px; height: 125px; color: black">View Reg.<br>Certificate</a></li>
+        <li><a href="newrc.php"style="background-color:whitesmoke;width: 200px; height: 125px;  color: black">NEW RC <br>DETAILS </a></li>
+        <li><a href="send_feed.php"style="background-color:whitesmoke;width: 200px; height: 125px;  color: black">SEND <br> Feedback</a></li>
+       <li><a href="changerc.php"style="background-color:whitesmoke;width: 200px; height: 125px;  color: black">Change <br>Request</a></li>
+        <li><a href="index_1.php"style="background-color:whitesmoke;width: 200px; height: 125px;  color: black">Logout</a></li>
 		</ul>
     </nav>
 	

@@ -113,7 +113,10 @@ form{
                     <th style="border:1px solid rgba(0,0,0,1.00);color: blue">PHONE</th>
                     <th style="border:1px solid rgba(0,0,0,1.00);color: blue">EMAIL</th>
                     <th rowspan="2" style="border:1px solid rgba(0,0,0,1.00);color: blue">
-                      <th style="border:1px solid rgba(0,0,0,1.00);color: blue">OPTIONS</th>
+                      <a href="go.html">VIEW DOCUMENT</a><br> 
+                        <img src="images/vrc.PNG" alt="download" width="800" height="100"/>
+                        </th>
+                        <th style="border:1px solid rgba(0,0,0,1.00);color: blue">OPTIONS</th>
                     </tr>
                     <?php
 				
@@ -133,7 +136,7 @@ form{
                                                 . "<th style='border:1px solid rgba(0,0,0,1.00);'>$n[10]</hd>"
                                                 . "<th style='border:1px solid rgba(0,0,0,1.00);'>$n[11]</th>"
                                                 . "<th style='border:1px solid rgba(0,0,0,1.00);'>"
-                                                . "<a href='approve2.php?no=$n[12]'>Approve</a>"
+                                                . "<a href='approve2.php?no=$n[12]'>Approve </a>"
                                                 . "</BR></BR><a href='reject2.php?no=$n[12]'>Reject</a></td></tr>";
 				}
 				}

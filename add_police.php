@@ -13,7 +13,7 @@ if(isset($_POST['submit']))
 	$s=mysql_query("insert into login(username,password,type)values('$uname','$pass','3')");
 	if($q)
 	{
-		echo "<script>alert('added successfully')</script>";
+		echo "<script>alert('Police Station added successfully')</script>";
 	}
 	else
 	{
